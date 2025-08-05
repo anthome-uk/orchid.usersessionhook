@@ -53,7 +53,7 @@ public class Program
         var message = new MqttApplicationMessageBuilder()
             .WithTopic($"usersessionhook/status/{Environment.MachineName}")
             .WithRetainFlag()
-            .WithPayload($"{{ \"online\": \"{online}\", \"lastChanged\": \"{DateTime.UtcNow:O}\" }}")
+            .WithPayload($"{{ \"online\": \"{online}\", \"platform\": \"{Environment.OSVersion.Platform}\", \"lastChanged\": \"{DateTime.UtcNow:O}\" }}")
             .Build();
 
         await mqttClient.PublishAsync(message);
