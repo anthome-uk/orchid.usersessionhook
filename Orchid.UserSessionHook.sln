@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orchid.UserSessionHook", "Orchid.UserSessionHook.csproj", "{1773B551-465A-4376-A10F-40624A6A2364}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1773B551-465A-4376-A10F-40624A6A2364}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1773B551-465A-4376-A10F-40624A6A2364}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1773B551-465A-4376-A10F-40624A6A2364}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1773B551-465A-4376-A10F-40624A6A2364}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
