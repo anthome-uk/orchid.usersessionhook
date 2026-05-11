@@ -7,19 +7,16 @@ on:
   push:
     paths-ignore:
       - 'README.md'
-    branches: [ "master" ]
+    branches: [ "main" ]
   pull_request:
     paths-ignore:
       - 'README.md'
-    branches: [ "master" ]
+    branches: [ "main" ]
 
 jobs:
   build:
     name: Build
-    #permissions:
-    #  checks: write
-    #  contents: read
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v6
   
