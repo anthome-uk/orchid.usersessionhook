@@ -4,8 +4,8 @@ Description=Send an MQTT message on login and logout
 [Service]
 Type=oneshot
 RemainAfterExit=true
-ExecStart=/home/anthony/devel/orchid.usersessionhook/bin/Release/net9.0/Orchid.UserSessionHook start
-ExecStop=/home/anthony/devel/orchid.usersessionhook/bin/Release/net9.0/Orchid.UserSessionHook stop
+ExecStart=/home/anthony/devel/orchid.usersessionhook/bin/Release/net10.0/Orchid.UserSessionHook start
+ExecStop=/home/anthony/devel/orchid.usersessionhook/bin/Release/net10.0/Orchid.UserSessionHook stop
 
 [Install]
 WantedBy=default.target
