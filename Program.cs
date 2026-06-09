@@ -46,7 +46,7 @@ public class Program
     {
         var mqttFactory = new MqttClientFactory();
         using var mqttClient = mqttFactory.CreateMqttClient();
-        var mqttClientOptions = new MqttClientOptionsBuilder().WithTcpServer("beast.anthome.uk").WithCredentials("anthony", "Fr35n3l42").Build();
+        var mqttClientOptions = new MqttClientOptionsBuilder().WithTcpServer("dockerhost.anthome.uk").WithCredentials("anthony", "Fr35n3l42").Build();
 
         await mqttClient.ConnectAsync(mqttClientOptions, CancellationToken.None);
         
