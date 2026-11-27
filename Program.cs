@@ -34,7 +34,11 @@ public class Program
 
     private static async Task Start()
     {
-        await SendMachineState(true);
+        // Check if this is a graphical login or not before sending the message
+	if (Environment.GetEnvironmentVariable("DISPLAY") != null)
+        {
+            await SendMachineState(true);
+        }
     }
 
     private static async Task Stop()
