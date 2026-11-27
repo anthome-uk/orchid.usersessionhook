@@ -29,10 +29,7 @@ public class Program
         switch (args[0])
         {
             case "start":
-                // Only report a graphical login as "online" so ssh sessions don't trigger it.
-                return Environment.GetEnvironmentVariable("DISPLAY") == null
-                    ? ExitOk
-                    : await SendMachineState(true);
+                return await SendMachineState(true);
             case "stop":
                 return await SendMachineState(false);
             default:

@@ -8,4 +8,4 @@ ExecStart=~PATH_ROOT~/bin/Release/net10.0/Orchid.UserSessionHook start
 ExecStop=~PATH_ROOT~/bin/Release/net10.0/Orchid.UserSessionHook stop
 
 [Install]
-WantedBy=default.target
+WantedBy=graphical-session.target
